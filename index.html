@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#0a0c14" />
+
+<!-- ============ 需要你替换的信息（搜索 REPLACE 即可全部找到） ============ -->
+<title>毛豆 | 打游戏 · 撸小动物</title>
+<meta name="description" content="一个爱打游戏、爱小动物的普通人的个人主页：游戏档案、小动物图鉴、碎碎念和联系方式。" />
+<meta name="author" content="毛豆" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="毛豆 | 打游戏 · 撸小动物" />
+<meta property="og:description" content="一个爱打游戏、爱小动物的普通人的个人主页。" />
+<meta property="og:url" content="https://maodou452.github.io/" />
+<link rel="canonical" href="https://maodou452.github.io/" />
+<!-- ==================================================================== -->
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%BE%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Press+Start+2P&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<div class="bg-layer" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="bg-glow bg-glow--a"></div>
+  <div class="bg-glow bg-glow--b"></div>
+  <div class="bg-noise"></div>
+</div>
+
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="brand" href="#home" aria-label="返回首页">
+      <span class="brand__logo">🐾</span>
+      <span class="brand__text">毛豆<span class="brand__dot">.dev</span></span>
+    </a>
+
+    <nav class="nav__menu" id="navMenu" aria-label="主导航">
+      <a class="nav__link" href="#home">首页</a>
+      <a class="nav__link" href="#about">关于我</a>
+      <a class="nav__link" href="#games">游戏</a>
+      <a class="nav__link" href="#pets">小动物</a>
+      <a class="nav__link" href="#timeline">时间线</a>
+      <a class="nav__link" href="#contact">联系我</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="切换主题" title="切换深色 / 浅色">
+        <span class="icon-btn__icon" aria-hidden="true">🌙</span>
+      </button>
+      <button class="icon-btn nav__burger" id="navBurger" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero section" id="home">
+    <div class="container hero__inner">
+      <div class="hero__text reveal">
+        <p class="badge">
+          <span class="badge__dot" aria-hidden="true"></span>
+          在线：打游戏 <span class="badge__sep">/</span> 撸小动物
+        </p>
+
+        <h1 class="hero__title">
+          你好，我是 <span class="grad">毛豆</span>
+          <span class="hero__wave" aria-hidden="true">👋</span>
+        </h1>
+
+        <p class="hero__typed">
+          <span class="hero__typed-pre">我是一名</span>
+          <span class="typed" id="typed" data-words="游戏玩家,猫奴,铲屎官,夜猫子,收藏控"></span>
+          <span class="caret" aria-hidden="true"></span>
+        </p>
+
+        <p class="hero__desc">
+          白天写点代码，晚上开黑上分；打完一局就去摸摸猫，顺便被它咬一口。
+          这个页面记录我玩的游戏、养的小动物，以及一些没什么用但很好玩的东西。
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#games">
+            <span aria-hidden="true">🎮</span> 看看我玩什么
+          </a>
+          <a class="btn btn--ghost" href="#pets">
+            <span aria-hidden="true">🐱</span> 认识我的小动物
+          </a>
+        </div>
+
+        <!-- REPLACE: 改成你自己的真实数据 -->
+        <dl class="stats">
+          <div class="stats__item">
+            <dt>游戏时长</dt>
+            <dd><span class="count" data-target="1200">0</span>+ 小时</dd>
+          </div>
+          <div class="stats__item">
+            <dt>通关游戏</dt>
+            <dd><span class="count" data-target="42">0</span> 款</dd>
+          </div>
+          <div class="stats__item">
+            <dt>小动物合影</dt>
+            <dd><span class="count" data-target="300">0</span>+ 张</dd>
+          </div>
+          <div class="stats__item">
+            <dt>云吸猫占比</dt>
+            <dd><span class="count" data-target="99">0</span>%</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero__art reveal" aria-hidden="true">
+        <div class="avatar-card">
+          <div class="avatar-card__ring"></div>
+          <div class="avatar-card__face">🐱</div>
+          <div class="avatar-card__tag">Player One</div>
+          <div class="avatar-card__bar">
+            <span class="avatar-card__bar-fill"></span>
+          </div>
+          <p class="avatar-card__hint">Lv.99 撸猫 &amp; 打游戏</p>
+        </div>
+        <span class="float-emoji float-emoji--1">🎮</span>
+        <span class="float-emoji float-emoji--2">🐶</span>
+        <span class="float-emoji float-emoji--3">🐰</span>
+        <span class="float-emoji float-emoji--4">🕹️</span>
+      </div>
+    </div>
+
+    <a class="scroll-hint" href="#about" aria-label="向下滚动">
+      <span class="scroll-hint__mouse"></span>
+      <span class="scroll-hint__text">往下看看</span>
+    </a>
+  </section>
+  <!-- ==================== 关于我 ==================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="section__eyebrow">01 / ABOUT</p>
+        <h2 class="section__title">关于我</h2>
+        <p class="section__lead">一句话总结：白天是正常人，晚上是快乐游戏宅。</p>
+      </header>
+
+      <div class="about">
+        <div class="about__card card reveal">
+          <h3 class="card__title"><span aria-hidden="true">🧩</span> 我的两件大事</h3>
+          <p>
+            第一件事是<strong>打游戏</strong>：从单机剧情到手感竞技，只要能玩得开心就行。
+            喜欢研究机制、练习手感，也喜欢和朋友连麦到半夜。
+          </p>
+          <p>
+            第二件事是<strong>小动物</strong>：猫、狗、仓鼠、兔子都是我的快乐来源。
+            看到毛茸茸的东西会不受控制地蹲下说“宝宝你好”。
+          </p>
+        </div>
+
+        <div class="about__card card reveal">
+          <h3 class="card__title"><span aria-hidden="true">⚡</span> 随机小档案</h3>
+          <!-- REPLACE: 全部改成你自己的信息 -->
+          <ul class="facts">
+            <li><span>常驻平台</span><b>PC / 掌机</b></li>
+            <li><span>最喜欢的类型</span><b>剧情 + 联机</b></li>
+            <li><span>上线时间</span><b>20:00 - 02:00</b></li>
+            <li><span>本命动物</span><b>猫（橘色优先）</b></li>
+            <li><span>最喜欢的饮料</span><b>冰美式</b></li>
+            <li><span>口头禅</span><b>再玩一局就睡</b></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- REPLACE: 技能条改成你真实的技能与熟练度 -->
+      <div class="skills card reveal">
+        <h3 class="card__title"><span aria-hidden="true">📈</span> 我的属性面板</h3>
+        <div class="skills__grid">
+          <div class="skill" data-level="88">
+            <div class="skill__row"><span>反应速度</span><span class="skill__val">88</span></div>
+            <div class="skill__bar"><i></i></div>
+          </div>
+          <div class="skill" data-level="76">
+            <div class="skill__row"><span>团队配合</span><span class="skill__val">76</span></div>
+            <div class="skill__bar"><i></i></div>
+          </div>
+          <div class="skill" data-level="95">
+            <div class="skill__row"><span>撸猫手法</span><span class="skill__val">95</span></div>
+            <div class="skill__bar"><i></i></div>
+          </div>
+          <div class="skill" data-level="60">
+            <div class="skill__row"><span>早睡能力</span><span class="skill__val">60</span></div>
+            <div class="skill__bar"><i></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ==================== 游戏 ==================== -->
+  <section class="section" id="games">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="section__eyebrow">02 / GAMES</p>
+        <h2 class="section__title">我玩什么游戏</h2>
+        <p class="section__lead">按类型分了几格，鼠标移上去会有小反应。</p>
+      </header>
+
+      <!-- REPLACE: 把下面的标题 / 描述换成你真正在玩的游戏 -->
+      <div class="grid grid--3">
+        <article class="game card reveal">
+          <div class="game__top">
+            <span class="game__icon" aria-hidden="true">🎯</span>
+            <span class="tag">竞技</span>
+          </div>
+          <h3 class="card__title">战术射击</h3>
+          <p class="game__desc">最上头的一类。喜欢研究瞄准手感、听声辨位，也享受 1v3 翻盘的那一秒。</p>
+          <ul class="chips"><li>练枪</li><li>排位</li><li>队友开麦</li></ul>
+        </article>
+
+        <article class="game card reveal">
+          <div class="game__top">
+            <span class="game__icon" aria-hidden="true">⚔️</span>
+            <span class="tag">联机</span>
+          </div>
+          <h3 class="card__title">多人竞技</h3>
+          <p class="game__desc">和朋友一起玩才是真的好玩。菜不菜不重要，重要的是语音里笑声不断。</p>
+          <ul class="chips"><li>五排</li><li>上分</li><li>互相嫌弃</li></ul>
+        </article>
+
+        <article class="game card reveal">
+          <div class="game__top">
+            <span class="game__icon" aria-hidden="true">🏰</span>
+            <span class="tag">剧情</span>
+          </div>
+          <h3 class="card__title">角色扮演</h3>
+          <p class="game__desc">沉浸式体验一个世界的温度。会为了一个支线任务在城里逛两个小时。</p>
+          <ul class="chips"><li>探索</li><li>收集</li><li>看风景</li></ul>
+        </article>
+
+        <article class="game card reveal">
+          <div class="game__top">
+            <span class="game__icon" aria-hidden="true">🛠️</span>
+            <span class="tag">创造</span>
+          </div>
+          <h3 class="card__title">沙盒建造</h3>
+          <p class="game__desc">从零搭出一个属于自己的家，哪怕最后只住了一晚也很有成就感。</p>
+          <ul class="chips"><li>造房子</li><li>自动化</li><li>种田</li></ul>
+        </article>
+
+        <article class="game card reveal">
+          <div class="game__top">
+            <span class="game__icon" aria-hidden="true">🧩</span>
+            <span class="tag">休闲</span>
+          </div>
+          <h3 class="card__title">治愈小品</h3>
+          <p class="game__desc">下班后的解压神器。画风软、音乐舒服，玩十分钟心情就变好了。</p>
+          <ul class="chips"><li>解谜</li><li>模拟经营</li><li>放松</li></ul>
+        </article>
+
+        <article class="game card reveal">
+          <div class="game__top">
+            <span class="game__icon" aria-hidden="true">🐾</span>
+            <span class="tag">最爱</span>
+          </div>
+          <h3 class="card__title">动物类游戏</h3>
+          <p class="game__desc">又能玩游戏又能云吸动物，属于本页面两件大事的完美交集。</p>
+          <ul class="chips"><li>养成</li><li>撸毛</li><li>可爱</li></ul>
+        </article>
+      </div>
+
+      <!-- REPLACE: 最近在玩的列表 -->
+      <div class="playing card reveal">
+        <h3 class="card__title"><span aria-hidden="true">🔴</span> 最近在玩的</h3>
+        <ul class="playing__list">
+          <li>
+            <span class="playing__name">游戏 A</span>
+            <span class="playing__bar"><i style="--p: 80%"></i></span>
+            <span class="playing__meta">进度 80%</span>
+          </li>
+          <li>
+            <span class="playing__name">游戏 B</span>
+            <span class="playing__bar"><i style="--p: 45%"></i></span>
+            <span class="playing__meta">进度 45%</span>
+          </li>
+          <li>
+            <span class="playing__name">游戏 C</span>
+            <span class="playing__bar"><i style="--p: 20%"></i></span>
+            <span class="playing__meta">刚开坑</span>
+          </li>
+        </ul>
+        <p class="hint">把「游戏 A / B / C」换成你在玩的游戏名，再调整进度即可。</p>
+      </div>
+    </div>
+  </section>
+  <!-- ==================== 小动物 ==================== -->
+  <section class="section" id="pets">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="section__eyebrow">03 / ANIMALS</p>
+        <h2 class="section__title">小动物图鉴</h2>
+        <p class="section__lead">世界上有两种人：喜欢小动物的，和还没摸过的。</p>
+      </header>
+
+      <div class="grid grid--4">
+        <article class="animal card reveal">
+          <div class="animal__face" aria-hidden="true">🐱</div>
+          <h3 class="card__title">猫</h3>
+          <p>外表高冷，实际会半夜跑酷。呼噜声是全世界最好听的 BGM。</p>
+        </article>
+        <article class="animal card reveal">
+          <div class="animal__face" aria-hidden="true">🐶</div>
+          <h3 class="card__title">狗</h3>
+          <p>热情到让人不好意思。你回家的那一刻，它的尾巴就是螺旋桨。</p>
+        </article>
+        <article class="animal card reveal">
+          <div class="animal__face" aria-hidden="true">🐰</div>
+          <h3 class="card__title">兔子</h3>
+          <p>安静的毛毛球，耳朵一动一动的，吃东西时腮帮子特别治愈。</p>
+        </article>
+        <article class="animal card reveal">
+          <div class="animal__face" aria-hidden="true">🐹</div>
+          <h3 class="card__title">仓鼠</h3>
+          <p>颊囊是四次元口袋。可以塞下比自己脑袋还大的瓜子。</p>
+        </article>
+        <article class="animal card reveal">
+          <div class="animal__face" aria-hidden="true">🐦</div>
+          <h3 class="card__title">小鸟</h3>
+          <p>会唱歌的小闹钟。早上准时叫你起床，比任何 App 都敬业。</p>
+        </article>
+        <article class="animal card reveal">
+          <div class="animal__face" aria-hidden="true">🐢</div>
+          <h3 class="card__title">龟</h3>
+          <p>慢生活的代表。看它爬五分钟，血压能降下来。</p>
+        </article>
+        <article class="animal card reveal">
+          <div class="animal__face" aria-hidden="true">🦊</div>
+          <h3 class="card__title">狐狸</h3>
+          <p>现实里的颜值担当。（此条来自云吸，未能实现近距离接触。）</p>
+        </article>
+        <article class="animal card reveal">
+          <div class="animal__face" aria-hidden="true">🐼</div>
+          <h3 class="card__title">熊猫</h3>
+          <p>终极大招。一天除了吃就是睡，是我理想中的生活状态。</p>
+        </article>
+      </div>
+
+      <!-- REPLACE: 把占位方块换成你自己的照片 -->
+      <div class="gallery-wrap">
+        <h3 class="gallery__title reveal"><span aria-hidden="true">📸</span> 我家的小动物 / 拍到的毛孩子</h3>
+        <div class="gallery">
+          <figure class="gallery__item reveal">
+            <!-- 换成照片：把下面整行替换为 <img src="assets/img/pet-1.jpg" alt="我的猫" /> -->
+            <div class="gallery__ph">＋ 放一张照片</div>
+            <figcaption>我的猫 · 名字待填写</figcaption>
+          </figure>
+          <figure class="gallery__item reveal">
+            <div class="gallery__ph">＋ 放一张照片</div>
+            <figcaption>小区里的狗 · 每天见</figcaption>
+          </figure>
+          <figure class="gallery__item reveal">
+            <div class="gallery__ph">＋ 放一张照片</div>
+            <figcaption>公园遇到的兔子</figcaption>
+          </figure>
+          <figure class="gallery__item reveal">
+            <div class="gallery__ph">＋ 放一张照片</div>
+            <figcaption>云吸的熊猫</figcaption>
+          </figure>
+        </div>
+        <p class="hint">
+          用法：把照片放进 <code>assets/img/</code>，然后把中间的
+          <code>&lt;div class="gallery__ph"&gt;…&lt;/div&gt;</code> 换成
+          <code>&lt;img src="assets/img/你的文件名.jpg" alt="说明文字" /&gt;</code> 即可。
+        </p>
+      </div>
+
+      <!-- REPLACE: 猫派 / 狗派 投票的文案 -->
+      <div class="vote card reveal">
+        <h3 class="card__title"><span aria-hidden="true">🗳️</span> 猫派还是狗派？</h3>
+        <p class="vote__q">我的答案是：都要。请自己也投票玩玩 👇</p>
+        <div class="vote__btns">
+          <button class="btn btn--primary" type="button" data-vote="cat">🐱 猫派</button>
+          <button class="btn btn--ghost" type="button" data-vote="dog">🐶 狗派</button>
+          <button class="btn btn--ghost" type="button" data-vote="both">🐾 都要</button>
+        </div>
+        <p class="vote__result" id="voteResult" role="status">还没投票，选一个吧～</p>
+      </div>
+    </div>
+  </section>
+  <!-- ==================== 时间线 ==================== -->
+  <section class="section" id="timeline">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="section__eyebrow">04 / STORY</p>
+        <h2 class="section__title">我的游戏 &amp; 动物时间线</h2>
+        <p class="section__lead">一路走来，主机换了几台，猫毛掉了一地。</p>
+      </header>
+
+      <!-- REPLACE: 改成你自己的经历与年份 -->
+      <ol class="timeline">
+        <li class="timeline__item reveal">
+          <span class="timeline__year">小时候</span>
+          <div class="timeline__body card">
+            <h3 class="card__title">第一次接触游戏机</h3>
+            <p>人生第一款游戏，手柄比手还大，从那以后就再也没放下过。</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <span class="timeline__year">后来</span>
+          <div class="timeline__body card">
+            <h3 class="card__title">遇见第一只猫</h3>
+            <p>第一次被蹭腿的时候，我就知道自己这辈子大概率是猫派了。</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <span class="timeline__year">现在</span>
+          <div class="timeline__body card">
+            <h3 class="card__title">边打游戏边被猫踩键盘</h3>
+            <p>白天上班，晚上开黑；猫在脚边睡觉，队友在语音里喊我快点。</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <span class="timeline__year">以后</span>
+          <div class="timeline__body card">
+            <h3 class="card__title">想做的事</h3>
+            <p>通关更多好游戏，认识更多小动物，也把这个页面一直写下去。</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <!-- ==================== 联系我 ==================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="section__eyebrow">05 / CONTACT</p>
+        <h2 class="section__title">来一起玩 / 一起吸猫</h2>
+        <p class="section__lead">组队、聊天、推荐游戏或者发我一张小动物照片，都欢迎。</p>
+      </header>
+
+      <!-- REPLACE: 把 href 换成你自己的链接和邮箱 -->
+      <div class="contact">
+        <a class="contact__item card reveal" href="https://github.com/maodou452" target="_blank" rel="noopener">
+          <span class="contact__icon" aria-hidden="true">🐙</span>
+          <span class="contact__label">GitHub</span>
+          <span class="contact__value">@maodou452</span>
+        </a>
+        <!-- REPLACE: 换成你的邮箱。改成 <a class="contact__item card reveal" href="mailto:你的邮箱"> 即可点击 -->
+        <div class="contact__item card reveal contact__item--todo">
+          <span class="contact__icon" aria-hidden="true">✉️</span>
+          <span class="contact__label">邮箱</span>
+          <span class="contact__value">待补充</span>
+        </div>
+        <!-- REPLACE: 换成你的游戏 ID（Steam / PSN / 国服 ID 都行），用 <a href="..."> 包起来就能点击 -->
+        <div class="contact__item card reveal contact__item--todo">
+          <span class="contact__icon" aria-hidden="true">🎮</span>
+          <span class="contact__label">游戏 ID</span>
+          <span class="contact__value">待补充</span>
+        </div>
+        <!-- REPLACE: 换成你的视频主页（B站 / 抖音 / YouTube 等） -->
+        <div class="contact__item card reveal contact__item--todo">
+          <span class="contact__icon" aria-hidden="true">📺</span>
+          <span class="contact__label">视频主页</span>
+          <span class="contact__value">待补充</span>
+        </div>
+      </div>
+
+      <div class="cta card reveal">
+        <p>如果这个页面让你笑了一下，那就够了。</p>
+        <div class="cta__btns">
+          <a class="btn btn--primary" href="#home">回到顶部看看</a>
+          <button class="btn btn--ghost" type="button" id="eggBtn">
+            <span aria-hidden="true">🐾</span> 按一下有彩蛋
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>© <span id="year">2026</span> 毛豆 · 用 HTML / CSS / JS 手写，托管在 GitHub Pages</p>
+    <p class="footer__meta">
+      <span aria-hidden="true">🐾</span> 本站没有 Cookie，只有猫毛
+    </p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到顶部">↑</button>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
